@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="iconeBloodborne.ico" type="image/x-icon">
+        <title>Mídias em HTML</title>
+    </head>
+    <body>
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho  do seu navegador!</p>
+
+        <picture> <!--Usar a tag picture pra quandp as imagens se comunicarem entre si-->
+            <source media="(max-width: 750px)" srcset="../imagens/imagemP.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="../imagens/imagemM.png" type="image/png">
+            <img src="../imagens/imagemG.png" alt="Imagem Grande">
+            <!--OBS.: SEMPRE deixar o menor em cima e maior por ultimo-->
+        </picture>
+
+    </body>
+</html>
+<!--Aula 32-->
+<!--O código acima altera a imagem na tela automaticamente, dependendo do seu tamanho-->

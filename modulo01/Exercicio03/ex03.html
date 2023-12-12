@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 03</title>
+    </head>
+    <body>
+        <h1>Imagem Flexível</h1>
+        <hr>
+        <p>Voçê está vendo a imagem completa? Experimente ampliar o tamanho da sua janela, para assim aproveitar a melhor experiência!</p>
+        <picture>
+            <source media="(max-width: 800px)" srcset="foto3.jpg" type="image/jpg">
+            <source media="(max-width: 1000px)" srcset="foto2.jpg" type="image/jpg">
+            <img src="foto.jpg" alt="Imagem grande" type="image/jpg">
+        </picture>
+    </body>
+</html>

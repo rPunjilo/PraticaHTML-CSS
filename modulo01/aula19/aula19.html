@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="iconeBloodborne.ico" type="image/x-icon">
+        <title>Vídeos com HTML5</title>
+    </head>
+    <body>
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <!--Não é recomendável utilizar vídeos hospedados localmente, pois pode consumir mais tréfego de dados, gerando mais custo ao cliente-->
+        <h2>Este vídeo está hospedado no meu próprio servidor!</h2>
+        <video width="560" poster="../imagens/mar.jpg" controls>
+            <source src="midias/meuvideo2.mp4" type="video/mp4">
+            <source src="midias/meuvideo1.webm" type="video/webm">
+            <source src="midias/meuvideo3.ogv" type="video/ogg">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos!</p>
+        </video>
+        <!--Da mesma forma como foi usado em imagens, imaginar que a tag video é um loop de repetição-->
+        <!--Sempre de cima pra baixo, irá carregar o primeiro vídeo/arquivo, caso não seja compátivel, irá carregar o próximo-->
+        <hr>
+
+        <h1>Inserindo vídeos do Youtube!</h1>
+        <h2>Está vídeo está hospedado no servidor do Youtube!</h2>
+        <!--Recomendado, pois irá consumir beeeeeeem menos dados-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uxs_HYw_mLk?si=E66zoDD8js4196Ji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--Opção compartilhar e incorporar-->
+        <hr>
+
+        <h1>Inserindo vídeos do Vimeo!</h1>
+        <h2>Está vídeo está hospedado no servidor do Vimeo!</h2>
+        <iframe src="https://player.vimeo.com/video/33573428?h=975dc83d80&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    </body>
+</html>
+<!--Aula 35-->
+<!--A tag width="500" irá deixar o player com o tamanho de 500 px-->
+<!--A tag poster="../imagens/mar.jpg" irá deixar uma imagem como "capa" do vídeo-->
