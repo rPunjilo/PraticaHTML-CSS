@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: red;
+    text-decoration: none; /*Retirando o sublinhado*/
+    font-weight: bold;
+}
+
+a:visited{
+    color: darkred;
+}
+
+/*Se já foi visitado, a cor é vermelho escuro. Ao passar o mouse em cima do link, irá ficar preto e sublinhado!*/
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+a:active{
+    color: yellowgreen; /*Ao clicar no link, irá mudar a cor da fonte*/
+}
+
+a::before{
+    content: '→ ';
+}
+
+a::after{ /*Pseudo-Elemento| Ocorre depois das pseudo-classes*/
+    content: ' ←';
+}
+
+.especial{
+    background-color: rgb(226, 154, 154);
+}
+
+.especial::before{
+    content: '♠';
+}
+
+.especial::after{
+    content: '♠';
+}
+
+/*  SELETOTES PERSONALIZADOS
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-element
+    > = childrem
+*/

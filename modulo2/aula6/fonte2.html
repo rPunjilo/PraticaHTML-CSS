@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--Não usaremos o StyleSheet-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*Criando a fonte*/
+        @font-face {
+            font-family: 'fonte';
+            src: url('fonts/Enchanted Land.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-att
+                - svg
+            */
+
+            /*ATENÇÃO!! Nem todos os navegadores são compátiveis com as fontes externas!!!*/
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+
+        h1{
+            font-family: 'fonte', sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, exercitationem voluptate quos itaque sint iure corrupti natus ipsum commodi assumenda saepe magnam voluptates beatae explicabo consequatur dolores atque molestias voluptatem?</p>
+
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nesciunt dolorem veniam. Beatae at tenetur consequuntur vel fugit maxime, facere minus eveniet incidunt iure assumenda eius reprehenderit debitis atque placeat.</p>
+</body>
+</html>
+
+<!--Aula 15-->
+<!--Estamos usando fontes externas, do site dafoont.com-->

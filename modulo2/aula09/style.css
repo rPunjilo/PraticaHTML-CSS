@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+div{
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid black; /*Irá traçar uma borda*/
+    display: inline-block; /*As ""caixas"" irão ficar uma do lado da outra*/
+}
+
+div:hover{
+    background-color: crimson;
+}
+
+/*Para usar a subclasse, usar o char ':'. Ele é uma configuração de estado!*/
+/*Ao passar o mouse em cima da div, ele irá acionar a subclasse 'hover'*/
