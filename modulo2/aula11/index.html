@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            /*Criação da caixa*/
+            background-color: lightcoral;
+            height: 300px;
+            width: 300px;
+            
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*Sentido horário!!!*/
+            /*shorthand -> border 10px solid garkslate gray*/
+
+            /*É a borda para dentro*/
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /*shorthand -> padding 10px 10px 10px 10px/
+            /*Se for tudo igual, podemos colocar assim:*/
+            /*padding 10px*/
+
+
+            /*margin: auto; A caixa irá ficar no meio*/
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            margin: auto;
+            /*margin: 20px 20px 40px 20px auto*/
+
+            outline-style: dashed;
+            outline-color: saddlebrown;
+            outline-width: 5px;
+            /*outline: 5px dashed saddlebrown*/
+        }
+
+        a{
+            border-width: 8px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas in-level.</a> Vamos ver como isso funciona!</p>
+</body>
+</html>
+
+<!--user agent é o navegador-->
+<!--Aula 23 e 24-->

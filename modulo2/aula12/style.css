@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+
+header{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px; /*Aumenta a margem*/
+    margin: 4px; /*Diminui a margem*/
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav{
+    background-color: rgb(120, 121, 122);
+    padding: 6px;
+    box-shadow: 1px 2px 7px 1px black;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;   
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 9px #000000a3;  
+}
+
+article{
+    background-color: lightgray;
+    padding: 5px
+}
+
+article > aside{
+    background-color: white;
+}
+
+.Teste{
+    background-color: white;
+    padding: 4px;
+    margin: 2px;
+}
+
+.Teste > a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 6px
+}
+
+.Teste > a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+footer > p{
+    margin: 0px;
+}
